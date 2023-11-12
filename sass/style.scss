@@ -1,6 +1,8 @@
-@use 'Introduction';
+@import "variables", "NavBar";
 
 body{
-  background: #6D0A43;
+  background-color: rgba($color: #2e2a2a, $alpha: 1.0);
+  
   font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
   }

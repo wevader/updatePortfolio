@@ -1,7 +1,11 @@
-import './NavBar.css'
 
 const NavBar = () => {
   return (<header className='Header'>
+    <nav>
+      <ul>
+        <p>hola</p>
+      </ul>
+    </nav>
   </header>)
 
 }
