@@ -1,12 +1,197 @@
-.Header {
-  background-color: rgba(172, 147, 147, 0.6);
-  border: snow 1px solid;
+header {
+  grid-area: header;
+  background-color: rgba(245, 245, 245, 0.1);
+  font-size: 75%;
   height: 100%;
+  width: 100%;
+  margin: 5%;
+  color: #181616;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+h1, h2 {
+  margin: 2%;
+}
+
+@keyframes rubberBand {
+  0% {
+    transform: scale(1);
+    transform: scale(1);
+  }
+  30% {
+    transform: scaleX(1.1) scaleY(0.75);
+    transform: scaleX(1.1) scaleY(0.75);
+  }
+  40% {
+    transform: scaleX(0.75) scaleY(1.25);
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+  60% {
+    transform: scaleX(1.1) scaleY(0.85);
+    transform: scaleX(1.1) scaleY(0.85);
+  }
+  100% {
+    transform: scale(1);
+    transform: scale(1);
+  }
+}
+header:hover {
+  animation: 1s rubberBand infinite;
+}
+
+#presentation {
+  grid-area: presentation;
+  background-color: whitesmoke;
+  margin: 2%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid whitesmoke;
+  border: whitesmoke solid 1px;
+  box-shadow: 1px 1px 0px rgb(255, 255, 255), 2px 2px 0px rgb(210, 210, 210), 3px 3px 0px rgb(180, 180, 180), 4px 4px 0px rgb(130, 130, 130), 5px 5px 0px rgb(100, 100, 100);
+}
+
+#resume {
+  padding: 2%;
+}
+
+#foto {
+  border-radius: 50%;
+  width: 25%;
+}
+
+button {
+  height: 4em;
+  width: 15em;
+  border: none;
+  border-radius: 40px;
+  background-color: whitesmoke;
+}
+
+button span {
+  z-index: 1;
+  display: inline-block;
+  background-color: black;
+  height: 3em;
+  width: 11.5em;
+  border-radius: 25px;
+  color: #fff;
+  line-height: 55px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  transition: all 0.5s;
+}
+
+button .container {
+  z-index: -1;
+  width: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50px);
+  transition: all 0.4s;
+}
+
+button .container svg {
+  padding: 0 10px;
+}
+
+button:hover span {
+  width: 0;
+}
+
+button:hover .container {
+  z-index: 2;
   width: 100%;
 }
 
+#experience {
+  grid-area: experience;
+  background-color: whitesmoke;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 20px;
+  color: whitesmoke;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  height: auto;
+  width: auto;
+  box-shadow: 1px 1px 0px rgb(255, 255, 255), 2px 2px 0px rgb(210, 210, 210), 3px 3px 0px rgb(180, 180, 180), 4px 4px 0px rgb(130, 130, 130), 5px 5px 0px rgb(100, 100, 100);
+}
+
+#goals {
+  grid-area: goals;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  margin: 2%;
+  padding: 2%;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  height: auto;
+  width: auto;
+  box-shadow: 1px 1px 0px rgb(255, 255, 255), 2px 2px 0px rgb(210, 210, 210), 3px 3px 0px rgb(180, 180, 180), 4px 4px 0px rgb(130, 130, 130), 5px 5px 0px rgb(100, 100, 100);
+}
+
+.goal {
+  background-color: #181616;
+  color: whitesmoke;
+  padding: 5%;
+  margin: 2%;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+#design {
+  display: grid;
+  grid-template-areas: "header header" "presentation presentation" "experience experience" "goals goals" "project project";
+  gap: 1rem;
+  grid-template-columns: repeat(15rem, 1fr);
+  background-color: #181616;
+  justify-items: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 2%;
+  border: #181616 solid 1px;
+  box-shadow: 1px 1px 0px #181616, 2px 2px 0px rgb(45, 45, 45), 3px 3px 0px rgb(75, 75, 75), 4px 4px 0px rgb(105, 105, 105), 5px 5px 0px rgb(130, 130, 130);
+}
+
 body {
-  background-color: #2e2a2a;
+  background-color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 20px;
+  padding: 0 10%;
+  margin: 0;
+}
+
+#project {
+  grid-area: project;
+  background-color: whitesmoke;
+  margin: 2%;
+  padding: 2%;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  height: auto;
+  width: auto;
+  box-shadow: 1px 1px 0px rgb(255, 255, 255), 2px 2px 0px rgb(210, 210, 210), 3px 3px 0px rgb(180, 180, 180), 4px 4px 0px rgb(130, 130, 130), 5px 5px 0px rgb(100, 100, 100);
 }/*# sourceMappingURL=style.css.map */

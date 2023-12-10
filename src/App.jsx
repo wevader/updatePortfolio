@@ -1,24 +1,22 @@
-import './App.css'
-
-import {Routes, Route, Navigate} from 'react-router-dom'
-
-import NavBar from './components/navMain/NavBar'
+import '../sass/style.css'
+import Experience from './components/_Experience'
+import Goals from './components/_Goals'
+import NavBar from './components/_NavBar'
+import Presentation from './components/_Presentation'
+import Projects from './components/_Projects'
 
 function App() {
   
 
   return (
-    <>
-      <body id='body'>
-        <NavBar/> 
-        <Routes>
-        <Route/>
-        <Route path='*' elemen={Navigate} to="/"/>
-      </Routes>
-      </body>
-      
 
-    </>
+      <div id='design'>
+        <NavBar/>
+        <Presentation/>
+        <Experience/>
+        <Goals/>
+        <Projects/>
+      </div>
   )
 }
 

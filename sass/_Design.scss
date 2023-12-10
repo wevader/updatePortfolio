@@ -1,0 +1,26 @@
+#design{
+  display: grid;
+  grid-template-areas:  "header header"
+                        "presentation presentation"
+                        "experience experience" 
+                        "goals goals"
+                        "project project";
+  gap: 1rem;
+  grid-template-columns: repeat(15rem, 1fr);
+  background-color: rgba($color: $color-background, $alpha: 1);
+
+  justify-items: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: $scale-2;
+  
+
+  
+  border: $color-background solid 1px;
+  box-shadow: 1px 1px 0px $color-background,
+              2px 2px 0px rgb(45, 45, 45),
+              3px 3px 0px rgb(75, 75, 75),
+              4px 4px 0px rgb(105, 105, 105),
+              5px 5px 0px rgb(130, 130, 130);
+}

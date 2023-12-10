@@ -1,3 +1,26 @@
 //variables
 
-$color-principal: white;
+
+//color
+$color-background: #181616;
+$color-blue: rgb(25, 25, 163);
+$color-white: whitesmoke;
+//sombras
+$shadow:  1px 1px 0px rgb(255, 255, 255),
+          2px 2px 0px rgb(210, 210, 210),
+          3px 3px 0px rgb(180, 180, 180),
+          4px 4px 0px rgb(130, 130, 130),
+          5px 5px 0px rgb(100, 100, 100);
+$border-radius: 20px;
+
+
+//escalas
+$scale-2: 2%;
+$scale-5: 5%;
+$scale-10: 10%;
+$scale-25: 25%;
+$scale-50: 50%;
+$scale-75: 75%;
+$scale-100: 100%;
+
+

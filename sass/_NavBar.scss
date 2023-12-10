@@ -1,0 +1,17 @@
+header{
+  grid-area: header;
+  background-color: rgba($color: $color-principal, $alpha: 0.1);
+  font-size: $scale-75;
+  height: $scale-100;
+  width: $scale-100;
+  margin: $scale-5;
+  color: $color-blue;
+  padding: $scale-5; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content:flex-start;
+  
+    
+}
+

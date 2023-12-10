@@ -1,0 +1,17 @@
+#experience{
+  grid-area: experience;
+  background-color: rgba($color: $color-principal, $alpha: 1);
+  padding: $scale-2;
+  margin: $scale-2;
+  border-radius: $border-radius;
+  color: $color-white;
+  
+
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  height: auto;
+  width: auto;
+  box-shadow: $shadow;
+}

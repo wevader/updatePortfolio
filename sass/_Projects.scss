@@ -1,0 +1,14 @@
+#project{
+  grid-area: project;
+  background-color: rgba($color: $color-principal, $alpha: 1);
+  margin: $scale-2;
+  padding: $scale-2;
+  
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  height: auto;
+  width: auto;
+  box-shadow: $shadow;
+} 
